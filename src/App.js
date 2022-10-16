@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
+import ListT from "./components/listTask/ListeT";
 import './App.css';
+import Add_Task from './components/AddTask/AddTask'
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='titele'>TODO APP</h1>
+      
+      <Add_Task/>
+      <ListT/>
     </div>
-  );
+  )
 }
 
 export default App;
